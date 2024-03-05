@@ -6,11 +6,11 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240228161717" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240306001956" />
 	<link rel="shortcut icon" href="logo.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240228161717" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240306001956" rel="stylesheet" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -21,7 +21,7 @@
 			<div class="header__container">
 				<div class="header__logo">
 					<a href="home.html">
-						<img class="header__logo-img" src="img/logo.png" alt="logo" />
+						<picture><source srcset="img/logo.webp" type="image/webp"><img class="header__logo-img" src="img/logo.png" alt="logo" /></picture>
 						<p class="header__logo-text">
 							<span>Школа</span>
 							<span>Футбола</span>
@@ -76,13 +76,13 @@
 							<span>Высококвалифицированнные тренеры </span>
 						</h4>
 						<h4 class="main__hello-subtitle">Для детей от 4 до 12 лет</h4>
-						<button class="main__hello-btn btn">
+						<button class="main__hello-btn btn btnScroll">
 							Записаться на пробную тренировку
 						</button>
 					</article>
 				</div>
 			</section>
-			<section class="main__training-programm main__section">
+			<section class="main__training-programm white-section main__section">
 				<div class="main__container">
 					<h1 class="main__training-programm-title title">
 						Программы тренировок
@@ -90,7 +90,7 @@
 					<div class="main__training-programm-cards">
 						<article class="main__training-program-item">
 							<div class="main__training-programm-item-img">
-								<img src="img/card1.jpg" alt="" />
+								<picture><source srcset="img/card1.webp" type="image/webp"><img src="img/card1.jpg" alt="" /></picture>
 							</div>
 							<div class="main__training-programm-item-content">
 								<div class="main__training-programm-item-text">
@@ -103,7 +103,7 @@
 								</div>
 								<div class="main__training-programm-item-price-and-btn">
 									<p class="main__training-programm-item-price">Бесплатно</p>
-									<button class="main__training-programm-item-btn btn">
+									<button class="main__training-programm-item-btn btn btnScroll">
 										Записаться
 									</button>
 								</div>
@@ -111,7 +111,7 @@
 						</article>
 						<article class="main__training-program-item">
 							<div class="main__training-programm-item-img">
-								<img src="img/card2.jpg" alt="" />
+								<picture><source srcset="img/card2.webp" type="image/webp"><img src="img/card2.jpg" alt="" /></picture>
 							</div>
 							<div class="main__training-programm-item-content">
 								<div class="main__training-programm-item-text">
@@ -124,7 +124,7 @@
 								</div>
 								<div class="main__training-programm-item-price-and-btn">
 									<p class="main__training-programm-item-price">9000 ₽</p>
-									<button class="main__training-programm-item-btn btn">
+									<button class="main__training-programm-item-btn btn btnScroll">
 										Записаться
 									</button>
 								</div>
@@ -132,7 +132,7 @@
 						</article>
 						<article class="main__training-program-item">
 							<div class="main__training-programm-item-img">
-								<img src="img/card3.jpg" alt="" />
+								<picture><source srcset="img/card3.webp" type="image/webp"><img src="img/card3.jpg" alt="" /></picture>
 							</div>
 							<div class="main__training-programm-item-content">
 								<div class="main__training-programm-item-text">
@@ -145,7 +145,7 @@
 								</div>
 								<div class="main__training-programm-item-price-and-btn">
 									<p class="main__training-programm-item-price">11000 ₽</p>
-									<button class="main__training-programm-item-btn btn">
+									<button class="main__training-programm-item-btn btn btnScroll">
 										Записаться
 									</button>
 								</div>
@@ -238,24 +238,212 @@
 					</div>
 				</div>
 			</section>
+			<section class="main__video white-section main__section">
+				<div class="main__container">
+					<h1 class="main__video-title title">
+						Узнайте, как проходят тренировки за 2 минуты из видео ниже
+					</h1>
+					<iframe class="main__video-iframe" src="https://www.youtube.com/embed/i-gCQaB8_KI?si=BA9lqIHemUm1WipA?modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section class="main__ourAdvantages main__whyChooseUs black-section main__section">
+				<div class="main__ourAdvantages-container main__whyChooseUs-container main__container">
+					<div class="main__ourAdvantages-fakeForCrish main__whyChooseUs-fakeForCrish"></div>
+					<div class="main__ourAdvantages-content main__whyChooseUs-content">
+						<h1 class="main__ourAdvantages-title main__whyChooseUs-title title">
+							Наши преимущества
+						</h1>
+						<div class="main__ourAdvantages-items main__whyChooseUs-items whyChooseUs-items-mb">
+							<div class="main__ourAdvantages-item main__whyChooseUs-item">
+								<span class="main__ourAdvantages-item-icon main__whyChooseUs-item-number">
+									<img src="img/underground.svg" alt="" />
+								</span>
+								<h4 class="main__ourAdvantages-item-title main__whyChooseUs-item-title">
+									Недалеко от метро
+								</h4>
+								<p class="main__ourAdvantages-item-description main__whyChooseUs-item-description">
+									Мы находимся буквально в 500 метров от метро Нагорная
+								</p>
+							</div>
+							<div class="main__ourAdvantages-item main__whyChooseUs-item">
+								<span class="main__ourAdvantages-item-icon main__whyChooseUs-item-number">
+									<img src="img/champion.svg" alt="" />
+								</span>
+								<h4 class="main__ourAdvantages-item-title main__whyChooseUs-item-title">
+									Два футбольных зала
+								</h4>
+								<p class="main__ourAdvantages-item-description main__whyChooseUs-item-description">
+									2 мини-футбольных зала для комфортного размещения детей
+								</p>
+							</div>
+						</div>
+						<div class="main__whyChooseUs-items">
+							<div class="main__ourAdvantages-item main__whyChooseUs-item">
+								<span class="main__ourAdvantages-item-icon main__whyChooseUs-item-number">
+									<img src="img/training.svg" alt="" />
+								</span>
+								<h4 class="main__ourAdvantages-item-title main__whyChooseUs-item-title">
+									Занятия в тренажерном зале
+								</h4>
+								<p class="main__ourAdvantages-item-description main__whyChooseUs-item-description">
+									Дети могут по желанию посещать тренажерный зал в конце
+									каждой тренировки
+								</p>
+							</div>
+							<div class="main__ourAdvantages-item main__whyChooseUs-item">
+								<span class="main__ourAdvantages-item-icon main__whyChooseUs-item-number">
+									<img src="img/photo.svg" alt="" />
+								</span>
+								<h4 class="main__ourAdvantages-item-title main__whyChooseUs-item-title">
+									Медийность
+								</h4>
+								<p class="main__ourAdvantages-item-description main__whyChooseUs-item-description">
+									Мы активно ведем социальные сети (YouTube, TikTok), и ваши
+									дети смогут показать свои силы в медийном футболе
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__galery white-section main__section">
+				<div class="main__container main__galery-container">
+					<h1 class="main__video-title title">
+						Смотрите фото футбольного зала, тренажерного зала и тренировок
+					</h1>
+					<div class="main__galery-desktop-grid-wrapper">
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo.webp" type="image/webp"><img src="img/photo.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-1.webp" type="image/webp"><img src="img/photo-1.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-2.webp" type="image/webp"><img src="img/photo-2.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-3.webp" type="image/webp"><img src="img/photo-3.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-4.webp" type="image/webp"><img src="img/photo-4.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-5.webp" type="image/webp"><img src="img/photo-5.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-6.webp" type="image/webp"><img src="img/photo-6.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-7.webp" type="image/webp"><img src="img/photo-7.png" /></picture>
+						</div>
+						<div class="swiper-slide">
+							<picture><source srcset="img/photo-8.webp" type="image/webp"><img src="img/photo-8.png" /></picture>
+						</div>
+					</div>
+					<div class="main__galery-slider-mobile-wrapper">
+						<div class="swiper mySwiperMobile">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo.webp" type="image/webp"><img src="img/photo.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-1.webp" type="image/webp"><img src="img/photo-1.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-2.webp" type="image/webp"><img src="img/photo-2.png" /></picture>
+								</div>
+							</div>
+						</div>
+						<div class="swiper mySwiperMobile">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-3.webp" type="image/webp"><img src="img/photo-3.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-4.webp" type="image/webp"><img src="img/photo-4.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-5.webp" type="image/webp"><img src="img/photo-5.png" /></picture>
+								</div>
+							</div>
+						</div>
+						<div class="swiper mySwiperMobile">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-6.webp" type="image/webp"><img src="img/photo-6.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-7.webp" type="image/webp"><img src="img/photo-7.png" /></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/photo-8.webp" type="image/webp"><img src="img/photo-8.png" /></picture>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="main__galery-btn btn">Посмотреть все фото</button>
+				</div>
+			</section>
+			<section id="contact" class="main__сontact black-section main__section">
+				<div class="main__сontact-container main__container">
+					<div class="main__contact-content">
+						<h1 class="main__contact-title title">
+							Запись на тренировку!
+						</h1>
+						<p class="main__contact-subtitle">Перезвоним вам в ближайшее время</p>
+						<form class="main__contact-form" action="" method="post">
+							<div class="main__contact-phone-form">
+								<input type="tel" value="" class="tel" placeholder="Номер телефона">
+							</div>
+							<button type="submit" data-popup="#myPopup" class="main__contact-btn btn">Записаться</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<nav class="footer__nav">
+					<ul class="footer__nav-list">
+						<li class="footer__nav-item">
+							<a href="trainingMethods.html">Методика тренировок</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="ourCoaches.html">Наши тренеры</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="gallery.html">Фотогалерея</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+						<li class="footer__nav-item">
+							<span style="cursor: pointer">Цены</span>
+						</li>
+					</ul>
+				</nav>
+				<p class="footer__text">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="myPopup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__title title">Спасибо за вашу заявку!</div>
+				<p class="popup__subtitle">
+					Менеджер свяжется с вами в ближайшее время и ответит на все вопросы
+				</p>
 			</div>
 		</div>
 	</div>
-</div>
- -->
-	<script src="js/app.min.js?_v=20240228161717"></script>
+	<script src="js/app.min.js?_v=20240306001956"></script>
 </body>
 
 </html>
