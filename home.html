@@ -6,11 +6,11 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240306003032" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240313145336" />
 	<link rel="shortcut icon" href="logo.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240306003032" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240313145336" rel="stylesheet" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -42,7 +42,7 @@
 						<li class="header__nav-item">
 							<a href="contacts.html">Контакты</a>
 						</li>
-						<li class="header__nav-item">
+						<li class="header__nav-item goToPrice">
 							<span style="cursor: pointer">Цены</span>
 						</li>
 					</ul>
@@ -82,7 +82,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="main__training-programm white-section main__section">
+			<section id="price" class="main__training-programm white-section main__section">
 				<div class="main__container">
 					<h1 class="main__training-programm-title title">
 						Программы тренировок
@@ -345,43 +345,19 @@
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
 								<!-- Slides -->
-								<div class="swiper-slide">
+								<div class="swiper-slide main__galery-slider-slide">
 									<img src="img/photo.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-1.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-2.png" />
 								</div>
-							</div>
-						</div>
-						<div class="swiper mySwiperMobile">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide">
+								<div class="swiper-slide main__galery-slider-slide">
 									<img src="img/photo-3.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-4.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-5.png" />
 								</div>
-							</div>
-						</div>
-						<div class="swiper mySwiperMobile">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide">
+								<div class="swiper-slide main__galery-slider-slide">
 									<img src="img/photo-6.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-7.png" />
-								</div>
-								<div class="swiper-slide">
 									<img src="img/photo-8.png" />
 								</div>
 							</div>
@@ -428,8 +404,11 @@
 						</li>
 					</ul>
 				</nav>
-				<p class="footer__text">© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000</p>
+				<p class="footer__text">
+					© nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
+				</p>
 			</div>
+
 		</footer>
 	</div>
 	<div id="myPopup" aria-hidden="true" class="popup">
@@ -443,7 +422,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240306003032"></script>
+	<script src="js/app.min.js?_v=20240313145336"></script>
 </body>
 
 </html>

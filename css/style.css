@@ -442,6 +442,10 @@ body.lock {
     gap: 0.625rem;
   }
 }
+.black-footer {
+  color: #2e363e;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -1495,6 +1499,16 @@ body {
     display: block;
   }
 }
+.main__galery-slider-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main__galery-slider-slide > img {
+  display: block;
+}
 .main__galery-btn {
   margin-top: 70px;
 }
@@ -1688,12 +1702,12 @@ body {
   background-size: 100%;
 }
 .main__contact-btn {
-  width: 300px;
+  width: 300px !important;
   height: 60px;
 }
 @media (max-width: 47.99875em) {
   .main__contact-btn {
-    width: 250px;
+    width: 250px !important;
   }
 }
 
@@ -1732,6 +1746,347 @@ body {
   font-size: 16px;
   line-height: 150%;
   text-align: center;
+}
+
+.ourCoaches__hello-container {
+  height: 100%;
+  position: relative;
+}
+.ourCoaches__hello-container::before {
+  content: "";
+  background-image: url("../img/ourCoaches.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  z-index: 5;
+  right: -355px;
+  bottom: 0;
+  width: 84%;
+  padding-top: 87.95%;
+}
+@media (max-width: 61.99875em) {
+  .ourCoaches__hello-container::before {
+    right: -150px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__hello-container::before {
+    background-image: url("../img/ourCoachesMobile.png");
+    width: 150%;
+    padding-top: 159.95%;
+    right: -120px;
+  }
+}
+.ourCoaches__hello-container::after {
+  content: "";
+  background-image: url("../img/helloclouds.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: -17%;
+  width: 134%;
+  padding-top: 19%;
+}
+.ourCoaches__hello-content {
+  max-width: 36.25rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 15;
+  top: 30%;
+}
+@media (min-width: 69.375em) {
+  .ourCoaches__hello-content {
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (gap: clamp( 1.25rem , 0.7436708861rem  +  2.5316455696vw , 2.5rem )) {
+    .ourCoaches__hello-content {
+      gap: clamp( 1.25rem , 0.7436708861rem  +  2.5316455696vw , 2.5rem );
+    }
+  }
+  @supports not (gap: clamp( 1.25rem , 0.7436708861rem  +  2.5316455696vw , 2.5rem )) {
+    .ourCoaches__hello-content {
+      gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .ourCoaches__hello-content {
+    gap: 1.25rem;
+  }
+}
+
+.ourCoaches__trainerInfo-section {
+  background-image: url("../img/trainerInfoBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: #2e363e;
+}
+@media (max-width: 47.99875em) and (min-width: 69.375em) {
+  .ourCoaches__trainerInfo-section {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-top: clamp( 1.875rem , 0.1028481013rem  +  8.8607594937vw , 6.25rem )) {
+    .ourCoaches__trainerInfo-section {
+      padding-top: clamp( 1.875rem , 0.1028481013rem  +  8.8607594937vw , 6.25rem );
+    }
+  }
+  @supports not (padding-top: clamp( 1.875rem , 0.1028481013rem  +  8.8607594937vw , 6.25rem )) {
+    .ourCoaches__trainerInfo-section {
+      padding-top: calc(1.875rem + 4.375 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .ourCoaches__trainerInfo-section {
+    padding-top: 1.875rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 69.375em) {
+  .ourCoaches__trainerInfo-section {
+    padding-bottom: 12.5rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem )) {
+    .ourCoaches__trainerInfo-section {
+      padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem );
+    }
+  }
+  @supports not (padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem )) {
+    .ourCoaches__trainerInfo-section {
+      padding-bottom: calc(4.375rem + 8.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .ourCoaches__trainerInfo-section {
+    padding-bottom: 4.375rem;
+  }
+}
+.ourCoaches__trainerInfo-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 61.99875em) {
+  .ourCoaches__trainerInfo-card:first-child {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-card {
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+.ourCoaches__trainerInfo-list {
+  flex: 0 1 40%;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-list.order-green-trainer {
+    order: 2;
+  }
+}
+.ourCoaches__life-footbal {
+  margin-bottom: 30px;
+}
+.ourCoaches__life-footbal.red-trainer {
+  background-color: #d50000;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__life-footbal {
+    display: none;
+  }
+}
+.ourCoaches__trainerInfo-list-item {
+  font-weight: 500;
+  line-height: 150%;
+  margin-left: 20px;
+  position: relative;
+  transition: all 0.2s ease;
+  position: relative;
+}
+@media (min-width: 69.375em) {
+  .ourCoaches__trainerInfo-list-item {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .ourCoaches__trainerInfo-list-item {
+      font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .ourCoaches__trainerInfo-list-item {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .ourCoaches__trainerInfo-list-item {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .ourCoaches__trainerInfo-list-item {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-bottom: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem )) {
+    .ourCoaches__trainerInfo-list-item {
+      margin-bottom: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem )) {
+    .ourCoaches__trainerInfo-list-item {
+      margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .ourCoaches__trainerInfo-list-item {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (min-width: 61.99875em) {
+  .ourCoaches__trainerInfo-list-item {
+    right: 0;
+  }
+  .ourCoaches__trainerInfo-list-item:hover {
+    right: -3px;
+  }
+}
+.ourCoaches__trainerInfo-list-item.red-trainer::before {
+  background-color: #d50000;
+}
+.ourCoaches__trainerInfo-list-item::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00732e;
+  top: 10px;
+  left: -20px;
+}
+.ourCoaches__trainerInfo-list-item:last-child {
+  margin-bottom: 0;
+}
+.ourCoaches__trainerInfo-img {
+  flex: 0 1 50%;
+  position: relative;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-img.order-green-trainer {
+    order: 1;
+  }
+}
+.ourCoaches__trainerInfo-img > img {
+  width: 100%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+@media (min-width: 61.99875em) {
+  .ourCoaches__trainerInfo-img > img {
+    top: 0;
+  }
+  .ourCoaches__trainerInfo-img > img:hover {
+    top: -3px;
+  }
+}
+.ourCoaches__trainerInfo-person-data {
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 80%;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-person-data {
+    top: 87%;
+  }
+}
+.ourCoaches__trainerInfo-person-data.green-trainer-block {
+  left: -20%;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-person-data.green-trainer-block {
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.ourCoaches__trainerInfo-person-data.red-trainer-block {
+  right: -20%;
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__trainerInfo-person-data.red-trainer-block {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.ourCoaches__trainerInfo-person-name {
+  color: #fff;
+}
+.ourCoaches__trainerInfo-person-name.green-trainer-name {
+  background-color: #00732e;
+}
+.ourCoaches__trainerInfo-person-name.red-trainer-name {
+  background-color: #d50000;
+}
+.ourCoaches__trainerInfo-person-position {
+  color: #2e363e;
+  background: #f2f6fa;
+  display: inline-block;
+}
+.ourCoaches__trainerInfo-person-name, .ourCoaches__trainerInfo-person-position {
+  padding: 15px;
+  border-radius: 5px;
+  transform: skew(-5deg);
+  position: relative;
+  overflow: hidden;
+  line-height: 16px;
+}
+@media (min-width: 69.375em) {
+  .ourCoaches__trainerInfo-person-name, .ourCoaches__trainerInfo-person-position {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 0.875rem , 0.7231012658rem  +  0.7594936709vw , 1.25rem )) {
+    .ourCoaches__trainerInfo-person-name, .ourCoaches__trainerInfo-person-position {
+      font-size: clamp( 0.875rem , 0.7231012658rem  +  0.7594936709vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.875rem , 0.7231012658rem  +  0.7594936709vw , 1.25rem )) {
+    .ourCoaches__trainerInfo-person-name, .ourCoaches__trainerInfo-person-position {
+      font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .ourCoaches__trainerInfo-person-name, .ourCoaches__trainerInfo-person-position {
+    font-size: 0.875rem;
+  }
+}
+.ourCoaches__trainerInfo-person-name > span, .ourCoaches__trainerInfo-person-position > span {
+  display: block;
+  position: relative;
+  transform: skew(5deg);
 }
 /**
  * Swiper 11.0.6
