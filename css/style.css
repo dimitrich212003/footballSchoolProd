@@ -804,67 +804,66 @@ body {
 .main__hello-title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 60px;
+  line-height: 50px;
 }
 @media (min-width: 69.375em) {
   .main__hello-title {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 69.375em) {
-  @supports (font-size: clamp( 2.25rem , 1.9462025316rem  +  1.5189873418vw , 3rem )) {
+  @supports (font-size: clamp( 1.5rem , 1.1962025316rem  +  1.5189873418vw , 2.25rem )) {
     .main__hello-title {
-      font-size: clamp( 2.25rem , 1.9462025316rem  +  1.5189873418vw , 3rem );
+      font-size: clamp( 1.5rem , 1.1962025316rem  +  1.5189873418vw , 2.25rem );
     }
   }
-  @supports not (font-size: clamp( 2.25rem , 1.9462025316rem  +  1.5189873418vw , 3rem )) {
+  @supports not (font-size: clamp( 1.5rem , 1.1962025316rem  +  1.5189873418vw , 2.25rem )) {
     .main__hello-title {
-      font-size: calc(2.25rem + 0.75 * (100vw - 20rem) / 49.375);
+      font-size: calc(1.5rem + 0.75 * (100vw - 20rem) / 49.375);
     }
   }
 }
 @media (max-width: 20em) {
   .main__hello-title {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 61.99875em) {
   .main__hello-title {
-    line-height: 55px;
+    line-height: 40px;
   }
 }
 @media (max-width: 47.99875em) {
   .main__hello-title {
-    line-height: 50px;
+    line-height: 35px;
   }
 }
 .main__hello-subtitle {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  font-size: 24px;
   line-height: 143%;
 }
 @media (min-width: 69.375em) {
   .main__hello-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 69.375em) {
-  @supports (font-size: clamp( 1.125rem , 0.9731012658rem  +  0.7594936709vw , 1.5rem )) {
+  @supports (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
     .main__hello-subtitle {
-      font-size: clamp( 1.125rem , 0.9731012658rem  +  0.7594936709vw , 1.5rem );
+      font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem );
     }
   }
-  @supports not (font-size: clamp( 1.125rem , 0.9731012658rem  +  0.7594936709vw , 1.5rem )) {
+  @supports not (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
     .main__hello-subtitle {
-      font-size: calc(1.125rem + 0.375 * (100vw - 20rem) / 49.375);
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 49.375);
     }
   }
 }
 @media (max-width: 20em) {
   .main__hello-subtitle {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 47.99875em) {
@@ -2087,6 +2086,230 @@ body {
   display: block;
   position: relative;
   transform: skew(5deg);
+}
+
+.contact__hello-section {
+  height: 100vh;
+  color: #f2f6fa;
+}
+@media (max-width: 61.99875em) {
+  .contact__hello-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 23.62375em) and (min-width: 69.375em) {
+  .contact__hello-section {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 23.62375em) and (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-top: clamp( 4.375rem , 3.6155063291rem  +  3.7974683544vw , 6.25rem )) {
+    .contact__hello-section {
+      padding-top: clamp( 4.375rem , 3.6155063291rem  +  3.7974683544vw , 6.25rem );
+    }
+  }
+  @supports not (padding-top: clamp( 4.375rem , 3.6155063291rem  +  3.7974683544vw , 6.25rem )) {
+    .contact__hello-section {
+      padding-top: calc(4.375rem + 1.875 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 23.62375em) and (max-width: 20em) {
+  .contact__hello-section {
+    padding-top: 4.375rem;
+  }
+}
+.contact__hello-container {
+  position: relative;
+  height: 100%;
+}
+@media (min-width: 61.99875em) {
+  .contact__hello-container::after {
+    content: "";
+    background-image: url("../img/helloclouds.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 7%;
+  }
+}
+.contact__hello-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 61.99875em) {
+  .contact__hello-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.contact__hello-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 69.375em) {
+  .contact__hello-list {
+    width: 31.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (width: clamp( 15.625rem , 9.2958860759rem  +  31.6455696203vw , 31.25rem )) {
+    .contact__hello-list {
+      width: clamp( 15.625rem , 9.2958860759rem  +  31.6455696203vw , 31.25rem );
+    }
+  }
+  @supports not (width: clamp( 15.625rem , 9.2958860759rem  +  31.6455696203vw , 31.25rem )) {
+    .contact__hello-list {
+      width: calc(15.625rem + 15.625 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .contact__hello-list {
+    width: 15.625rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .contact__hello-list {
+    margin-top: 1.875rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-top: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem )) {
+    .contact__hello-list {
+      margin-top: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem );
+    }
+  }
+  @supports not (margin-top: clamp( 1.25rem , 0.996835443rem  +  1.2658227848vw , 1.875rem )) {
+    .contact__hello-list {
+      margin-top: calc(1.25rem + 0.625 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .contact__hello-list {
+    margin-top: 1.25rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .contact__hello-list {
+    gap: 0.9375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (gap: clamp( 0.625rem , 0.4984177215rem  +  0.6329113924vw , 0.9375rem )) {
+    .contact__hello-list {
+      gap: clamp( 0.625rem , 0.4984177215rem  +  0.6329113924vw , 0.9375rem );
+    }
+  }
+  @supports not (gap: clamp( 0.625rem , 0.4984177215rem  +  0.6329113924vw , 0.9375rem )) {
+    .contact__hello-list {
+      gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .contact__hello-list {
+    gap: 0.625rem;
+  }
+}
+@media (max-width: 23.62375em) {
+  .contact__hello-list {
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
+.contact__hello-list-item-title {
+  font-weight: 200;
+  line-height: 150%;
+}
+@media (min-width: 69.375em) {
+  .contact__hello-list-item-title {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.875rem )) {
+    .contact__hello-list-item-title {
+      font-size: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.875rem );
+    }
+  }
+  @supports not (font-size: clamp( 0.75rem , 0.6993670886rem  +  0.253164557vw , 0.875rem )) {
+    .contact__hello-list-item-title {
+      font-size: calc(0.75rem + 0.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .contact__hello-list-item-title {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 23.62375em) {
+  .contact__hello-list-item-title {
+    font-size: 12px;
+  }
+}
+.contact__hello-list-item-data {
+  font-weight: 600;
+  line-height: 150%;
+}
+@media (min-width: 69.375em) {
+  .contact__hello-list-item-data {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 1rem , 0.9493670886rem  +  0.253164557vw , 1.125rem )) {
+    .contact__hello-list-item-data {
+      font-size: clamp( 1rem , 0.9493670886rem  +  0.253164557vw , 1.125rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.9493670886rem  +  0.253164557vw , 1.125rem )) {
+    .contact__hello-list-item-data {
+      font-size: calc(1rem + 0.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .contact__hello-list-item-data {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 23.62375em) {
+  .contact__hello-list-item-data {
+    font-size: 14px;
+  }
+}
+.contact__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+}
+@media (max-width: 61.99875em) {
+  .contact__map {
+    position: relative;
+    display: block;
+    z-index: 10;
+    height: 40vh;
+    width: 100vw;
+  }
+}
+
+[class*=copyrights-pane] {
+  display: none !important;
 }
 /**
  * Swiper 11.0.6

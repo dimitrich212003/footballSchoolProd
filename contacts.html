@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<title>Контакты</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240314195912" />
+	<link rel="shortcut icon" href="logo.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240314195912" rel="stylesheet" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="home.html">
+						<img class="header__logo-img" src="img/logo.png" alt="logo" />
+						<p class="header__logo-text">
+							<span>Школа</span>
+							<span>Футбола</span>
+						</p>
+					</a>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-item">
+							<a href="trainingMethods.html">Методика тренировок</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="ourCoaches.html">Наши тренеры</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="gallery.html">Фотогалерея</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="contacts.html">Контакты</a>
+						</li>
+						<li class="header__nav-item goToPrice">
+							<span style="cursor: pointer">Цены</span>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__telephone">
+					<div class="header__telephone-icon">
+						<img src="img/phone.svg" alt="phone" />
+					</div>
+					<div class="header__telephone-data">
+						<a href="tel:+78005553535" class="header__telephone-number">8 (800) 555-35-35</a>
+						<span class="header__telephone-time-for-call">Ежедневно с 9:00 до 20:00</span>
+					</div>
+				</div>
+				<div class="header__burger icon-menu">
+					<span></span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="main__helo-section contact__hello-section black-section main__section">
+				<div class="main__container contact__hello-container">
+					<article class="contact__hello-content">
+						<h1 class="main__hello-title">Контакты</h1>
+						<ul class="contact__hello-list">
+							<li class="contact__hello-list-item">
+								<p class="contact__hello-list-item-title">ТЕЛЕФОНЫ</p>
+								<p class="contact__hello-list-item-data">
+									<a href="tel:+74956271010">+7 (495) 627-10-10</a>
+								</p>
+								<p class="contact__hello-list-item-data">
+									<a href="tel:+79854779597">+7 (985) 477-95-97</a>
+								</p>
+							</li>
+							<li class="contact__hello-list-item">
+								<p class="contact__hello-list-item-title">EMAIL</p>
+								<p class="contact__hello-list-item-data">
+									<a href="mailto:cr7school@mail.ru">cr7school@mail.ru</a>
+								</p>
+							</li>
+							<li class="contact__hello-list-item">
+								<p class="contact__hello-list-item-title">
+									САЙТ СПОРТИВНОГО КОМПЛЕКСА
+								</p>
+								<p class="contact__hello-list-item-data">
+									<a href="https://www.games-liga.ru">https://www.games-liga.ru</a>
+								</p>
+							</li>
+							<li class="contact__hello-list-item">
+								<p class="contact__hello-list-item-title">НАШ АДРЕС</p>
+								<p class="contact__hello-list-item-data">
+									Москва, Электролитный проезд, дом 3, строение 5, спортивный
+									комплекс Высшая Лига
+								</p>
+							</li>
+						</ul>
+					</article>
+				</div>
+				<div id="map" class="contact__map"></div>
+			</section>
+		</main>
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=8de09623-a994-4ae3-acc9-e81d68168ffd&lang=ru_RU&_v=20240314195912"></script>
+	<script src="js/app.min.js?_v=20240314195912"></script>
+</body>
+
+</html>
