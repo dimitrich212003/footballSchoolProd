@@ -2089,12 +2089,11 @@ body {
 }
 
 .contact__hello-section {
-  height: 100vh;
+  height: 100vh !important;
   color: #f2f6fa;
 }
 @media (max-width: 61.99875em) {
   .contact__hello-section {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
