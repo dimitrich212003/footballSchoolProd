@@ -2310,6 +2310,347 @@ body {
 [class*=copyrights-pane] {
   display: none !important;
 }
+
+.trainingMethods__section {
+  height: 100%;
+  padding-bottom: 150px;
+  color: #f2f6fa;
+  position: relative;
+}
+@media (min-width: 3500px) {
+  .trainingMethods__section {
+    height: 100vh;
+  }
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__section {
+    padding-top: 9.375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem )) {
+    .trainingMethods__section {
+      padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem );
+    }
+  }
+  @supports not (padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem )) {
+    .trainingMethods__section {
+      padding-top: calc(6.25rem + 3.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__section {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 69.375em) {
+  .trainingMethods__section {
+    padding-bottom: 12.5rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem )) {
+    .trainingMethods__section {
+      padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem );
+    }
+  }
+  @supports not (padding-bottom: clamp( 4.375rem , 1.0838607595rem  +  16.4556962025vw , 12.5rem )) {
+    .trainingMethods__section {
+      padding-bottom: calc(4.375rem + 8.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .trainingMethods__section {
+    padding-bottom: 4.375rem;
+  }
+}
+.trainingMethods__section::before {
+  content: "";
+  background-image: url("../img/trainingMethodsBg.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center 100%;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__section::before {
+    background-size: 93.75rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (background-size: clamp( 43.75rem , 23.496835443rem  +  101.2658227848vw , 93.75rem )) {
+    .trainingMethods__section::before {
+      background-size: clamp( 43.75rem , 23.496835443rem  +  101.2658227848vw , 93.75rem );
+    }
+  }
+  @supports not (background-size: clamp( 43.75rem , 23.496835443rem  +  101.2658227848vw , 93.75rem )) {
+    .trainingMethods__section::before {
+      background-size: calc(43.75rem + 50 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__section::before {
+    background-size: 43.75rem;
+  }
+}
+.trainingMethods__сontainer {
+  height: 100%;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__title {
+    margin-bottom: 3.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem )) {
+    .trainingMethods__title {
+      margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem )) {
+    .trainingMethods__title {
+      margin-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__title {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__subtitle {
+    margin-bottom: 3.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem )) {
+    .trainingMethods__subtitle {
+      margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 1.875rem , 1.3686708861rem  +  2.5316455696vw , 3.125rem )) {
+    .trainingMethods__subtitle {
+      margin-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__subtitle {
+    margin-bottom: 1.875rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__article:first-child {
+    margin-bottom: 6.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-bottom: clamp( 3.125rem , 1.8591772152rem  +  6.3291139241vw , 6.25rem )) {
+    .trainingMethods__article:first-child {
+      margin-bottom: clamp( 3.125rem , 1.8591772152rem  +  6.3291139241vw , 6.25rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 3.125rem , 1.8591772152rem  +  6.3291139241vw , 6.25rem )) {
+    .trainingMethods__article:first-child {
+      margin-bottom: calc(3.125rem + 3.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__article:first-child {
+    margin-bottom: 3.125rem;
+  }
+}
+.trainingMethods__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.trainingMethods__cards-flex {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 47.99875em) {
+  .trainingMethods__cards-flex {
+    flex-direction: column;
+  }
+}
+@media (min-width: 47.99875em) {
+  .trainingMethods__cards-flex:first-child > div:first-child {
+    flex: 1 1 58%;
+  }
+  .trainingMethods__cards-flex:first-child > div:last-child {
+    flex: 1 1 38%;
+  }
+  .trainingMethods__cards-flex:last-child > div:first-child {
+    flex: 1 1 38%;
+  }
+  .trainingMethods__cards-flex:last-child > div:last-child {
+    flex: 1 1 58%;
+  }
+}
+.trainingMethods__cards-flex-item {
+  border: 2px solid #f2f6fa;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__cards-flex-item {
+    height: 15.625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (height: clamp( 12.5rem , 11.2341772152rem  +  6.3291139241vw , 15.625rem )) {
+    .trainingMethods__cards-flex-item {
+      height: clamp( 12.5rem , 11.2341772152rem  +  6.3291139241vw , 15.625rem );
+    }
+  }
+  @supports not (height: clamp( 12.5rem , 11.2341772152rem  +  6.3291139241vw , 15.625rem )) {
+    .trainingMethods__cards-flex-item {
+      height: calc(12.5rem + 3.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__cards-flex-item {
+    height: 12.5rem;
+  }
+}
+.trainingMethods__cards-flex-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.trainingMethods__cards-flex-item-number {
+  font-weight: 600;
+  color: #00732e;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__cards-flex-item-number {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 2rem , 1.5949367089rem  +  2.0253164557vw , 3rem )) {
+    .trainingMethods__cards-flex-item-number {
+      font-size: clamp( 2rem , 1.5949367089rem  +  2.0253164557vw , 3rem );
+    }
+  }
+  @supports not (font-size: clamp( 2rem , 1.5949367089rem  +  2.0253164557vw , 3rem )) {
+    .trainingMethods__cards-flex-item-number {
+      font-size: calc(2rem + 1 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__cards-flex-item-number {
+    font-size: 2rem;
+  }
+}
+.trainingMethods__cards-flex-item-text {
+  font-weight: 400;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__cards-flex-item-text {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .trainingMethods__cards-flex-item-text {
+      font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .trainingMethods__cards-flex-item-text {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__cards-flex-item-text {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__cards-flex-item-text {
+    line-height: 1.8125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (line-height: clamp( 1.5rem , 1.3734177215rem  +  0.6329113924vw , 1.8125rem )) {
+    .trainingMethods__cards-flex-item-text {
+      line-height: clamp( 1.5rem , 1.3734177215rem  +  0.6329113924vw , 1.8125rem );
+    }
+  }
+  @supports not (line-height: clamp( 1.5rem , 1.3734177215rem  +  0.6329113924vw , 1.8125rem )) {
+    .trainingMethods__cards-flex-item-text {
+      line-height: calc(1.5rem + 0.3125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__cards-flex-item-text {
+    line-height: 1.5rem;
+  }
+}
+.trainingMethods__cards-flex-item-text > p {
+  max-width: 400px;
+}
+.trainingMethods__text-and-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 61.99875em) {
+  .trainingMethods__text-and-img {
+    flex-direction: column;
+  }
+}
+.trainingMethods__text {
+  flex: 0 1 45%;
+  text-align: justify;
+}
+.trainingMethods__text > p {
+  font-weight: 400;
+  line-height: 160%;
+}
+@media (min-width: 69.375em) {
+  .trainingMethods__text > p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .trainingMethods__text > p {
+      font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem );
+    }
+  }
+  @supports not (font-size: clamp( 1rem , 0.8987341772rem  +  0.5063291139vw , 1.25rem )) {
+    .trainingMethods__text > p {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .trainingMethods__text > p {
+    font-size: 1rem;
+  }
+}
+.trainingMethods__img {
+  flex: 0 1 45%;
+}
+.trainingMethods__img > img {
+  max-width: 100%;
+}
 /**
  * Swiper 11.0.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
