@@ -2651,6 +2651,174 @@ body {
 .trainingMethods__img > img {
   max-width: 100%;
 }
+
+.gallery__section {
+  min-height: 80vh;
+  color: #f2f6fa;
+}
+.gallery__container {
+  padding-bottom: 200px;
+  min-height: 80vh;
+  position: relative;
+}
+@media (min-width: 69.375em) {
+  .gallery__container {
+    padding-top: 9.375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem )) {
+    .gallery__container {
+      padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem );
+    }
+  }
+  @supports not (padding-top: clamp( 6.25rem , 4.9841772152rem  +  6.3291139241vw , 9.375rem )) {
+    .gallery__container {
+      padding-top: calc(6.25rem + 3.125 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .gallery__container {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 69.375em) {
+  .gallery__container {
+    padding-bottom: 12.5rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 69.375em) {
+  @supports (padding-bottom: clamp( 7.5rem , 5.4746835443rem  +  10.1265822785vw , 12.5rem )) {
+    .gallery__container {
+      padding-bottom: clamp( 7.5rem , 5.4746835443rem  +  10.1265822785vw , 12.5rem );
+    }
+  }
+  @supports not (padding-bottom: clamp( 7.5rem , 5.4746835443rem  +  10.1265822785vw , 12.5rem )) {
+    .gallery__container {
+      padding-bottom: calc(7.5rem + 5 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .gallery__container {
+    padding-bottom: 7.5rem;
+  }
+}
+.gallery__container::before {
+  content: "";
+  background-image: url("../img/helloclouds.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: -17%;
+  width: 134%;
+  padding-top: 14%;
+}
+@media (max-width: 47.99875em) {
+  .gallery__container::before {
+    padding-top: 19%;
+  }
+}
+@media (min-width: 69.375em) {
+  .gallery__text {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (margin-bottom: clamp( 3.125rem , 2.3655063291rem  +  3.7974683544vw , 5rem )) {
+    .gallery__text {
+      margin-bottom: clamp( 3.125rem , 2.3655063291rem  +  3.7974683544vw , 5rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 3.125rem , 2.3655063291rem  +  3.7974683544vw , 5rem )) {
+    .gallery__text {
+      margin-bottom: calc(3.125rem + 1.875 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .gallery__text {
+    margin-bottom: 3.125rem;
+  }
+}
+.gallery__title {
+  margin-bottom: 10px;
+}
+.gallery__images {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.gallery__chapter:first-child > div {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+.gallery__chapter-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 133%;
+  display: inline-block;
+  position: relative;
+}
+@media (min-width: 69.375em) {
+  .gallery__chapter-title {
+    font-size: 1.375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 69.375em) {
+  @supports (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.375rem )) {
+    .gallery__chapter-title {
+      font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.375rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.125rem , 1.0237341772rem  +  0.5063291139vw , 1.375rem )) {
+    .gallery__chapter-title {
+      font-size: calc(1.125rem + 0.25 * (100vw - 20rem) / 49.375);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .gallery__chapter-title {
+    font-size: 1.125rem;
+  }
+}
+.gallery__chapter-title::before, .gallery__chapter-title::after {
+  content: "";
+  width: 15px;
+  height: 1.5px;
+  background-color: #f2f6fa;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.gallery__chapter-title::before {
+  transform: rotate(40deg);
+  right: -29px;
+}
+.gallery__chapter-title::after {
+  transform: rotate(-40deg);
+  right: -40px;
+}
+.gallery__chapter-title.active::before {
+  transform: rotate(-40deg);
+  right: -29px;
+}
+.gallery__chapter-title.active::after {
+  transform: rotate(40deg);
+  right: -40px;
+}
+.gallery__chapter-img {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+}
 /**
  * Swiper 11.0.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
