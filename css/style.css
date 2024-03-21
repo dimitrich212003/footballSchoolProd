@@ -767,6 +767,7 @@ body {
   padding-top: 19%;
 }
 .main__hello-content {
+  position: absolute;
   max-width: 36.25rem;
   display: flex;
   flex-direction: column;
@@ -1772,7 +1773,7 @@ body {
   .ourCoaches__hello-container::before {
     background-image: url("../img/ourCoachesMobile.png");
     width: 150%;
-    padding-top: 159.95%;
+    padding-top: 130.95%;
     right: -120px;
   }
 }
@@ -1794,7 +1795,7 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 15;
-  top: 30%;
+  top: 12%;
 }
 @media (min-width: 69.375em) {
   .ourCoaches__hello-content {
@@ -1816,6 +1817,23 @@ body {
 @media (max-width: 20em) {
   .ourCoaches__hello-content {
     gap: 1.25rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__hello-content {
+    max-width: 25.25rem;
+  }
+}
+@media (min-width: 47.99875em) {
+  .ourCoaches__hello-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 47.99875em) {
+  .ourCoaches__hello-btn {
+    margin: 0;
   }
 }
 
