@@ -1704,11 +1704,18 @@ body {
 .main__contact-btn {
   width: 300px !important;
   height: 60px;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  opacity: 0.5;
 }
 @media (max-width: 47.99875em) {
   .main__contact-btn {
     width: 250px !important;
   }
+}
+.main__contact-btn.activate_send {
+  pointer-events: auto;
+  opacity: 1;
 }
 
 .popup__content {
