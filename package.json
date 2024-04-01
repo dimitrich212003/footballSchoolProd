@@ -1,0 +1,22 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "node-js for football school project",
+  "main": "app.min.js",
+  "scripts": {
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrich212003/footballSchoolProd.git"
+  },
+  "author": "dimi_trich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimitrich212003/footballSchoolProd/issues"
+  },
+  "homepage": "https://github.com/dimitrich212003/footballSchoolProd#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

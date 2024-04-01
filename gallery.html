@@ -1,285 +1,299 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <title>Наши тренеры</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="shortcut icon" href="/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240324092832"
+      rel="stylesheet"
+    />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-	<title>Наши тренеры</title>
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240324092832" />
-	<link rel="shortcut icon" href="logo.ico" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240324092832" rel="stylesheet" />
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="/">
+              <img class="header__logo-img" src="./img/logo.png" alt="logo" />
+              <p class="header__logo-text">
+                <span>Школа</span>
+                <span>Футбола</span>
+              </p>
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/trainingMethods">Методика тренировок</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/ourCoaches">Наши тренеры</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/gallery">Фотогалерея</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/contacts">Контакты</a>
+              </li>
+              <li class="header__nav-item goToPrice">
+                <span style="cursor: pointer">Цены</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__telephone">
+            <div class="header__telephone-icon">
+              <img src="./img/phone.svg" alt="phone" />
+            </div>
+            <div class="header__telephone-data">
+              <a href="tel:+79163443837" class="header__telephone-number"
+                >+7 (916) 344-38-37</a
+              >
+              <span class="header__telephone-time-for-call"
+                >Ежедневно с 9:00 до 20:00</span
+              >
+            </div>
+          </div>
+          <div class="header__burger icon-menu">
+            <span></span>
+          </div>
+        </div>
+      </header>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__logo">
-					<a href="home.html">
-						<img class="header__logo-img" src="img/logo.png" alt="logo" />
-						<p class="header__logo-text">
-							<span>Школа</span>
-							<span>Футбола</span>
-						</p>
-					</a>
-				</div>
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="trainingMethods.html">Методика тренировок</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="ourCoaches.html">Наши тренеры</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="gallery.html">Фотогалерея</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="contacts.html">Контакты</a>
-						</li>
-						<li class="header__nav-item goToPrice">
-							<span style="cursor: pointer">Цены</span>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__telephone">
-					<div class="header__telephone-icon">
-						<img src="img/phone.svg" alt="phone" />
-					</div>
-					<div class="header__telephone-data">
-						<a href="tel:+79163443837" class="header__telephone-number">+7 (916) 344-38-37</a>
-						<span class="header__telephone-time-for-call">Ежедневно с 9:00 до 20:00</span>
-					</div>
-				</div>
-				<div class="header__burger icon-menu">
-					<span></span>
-				</div>
-			</div>
-		</header>
-
-		<main class="main">
-			<section class="gallery__section black-section main__section">
-				<div class="main__container gallery__container">
-					<div class="gallery__content">
-						<article class="gallery__text">
-							<h1 class="main__hello-title gallery__title">Фотогалерея</h1>
-							<h4 class="main__hello-subtitle gallery__subtitle">
-								<span>Посмотрите фото с треенировок, фото футбольного зала и фото
-									тренажерного зала!
-								</span>
-							</h4>
-						</article>
-						<article class="gallery__images">
-							<div class="gallery__chapter">
-								<h4 class="gallery__chapter-title active">Футбольный зал</h4>
-								<div class="gallery__chapter-img">
-									<div class="main__galery-desktop-grid-wrapper">
-										<div class="swiper-slide">
-											<img src="img/photo.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-1.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-2.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-3.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-4.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-5.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-6.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-7.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-8.png" />
-										</div>
-									</div>
-									<div class="main__galery-slider-mobile-wrapper">
-										<div class="swiper mySwiperMobile">
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper">
-												<!-- Slides -->
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo.png" />
-													<img src="img/photo-1.png" />
-													<img src="img/photo-2.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-3.png" />
-													<img src="img/photo-4.png" />
-													<img src="img/photo-5.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-6.png" />
-													<img src="img/photo-7.png" />
-													<img src="img/photo-8.png" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="gallery__chapter">
-								<h4 class="gallery__chapter-title">Наши тренировки</h4>
-								<div class="gallery__chapter-img">
-									<div class="main__galery-desktop-grid-wrapper">
-										<div class="swiper-slide">
-											<img src="img/photo.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-1.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-2.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-3.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-4.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-5.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-6.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-7.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-8.png" />
-										</div>
-									</div>
-									<div class="main__galery-slider-mobile-wrapper">
-										<div class="swiper mySwiperMobile">
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper">
-												<!-- Slides -->
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo.png" />
-													<img src="img/photo-1.png" />
-													<img src="img/photo-2.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-3.png" />
-													<img src="img/photo-4.png" />
-													<img src="img/photo-5.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-6.png" />
-													<img src="img/photo-7.png" />
-													<img src="img/photo-8.png" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="gallery__chapter">
-								<h4 class="gallery__chapter-title">Тренажерный зал</h4>
-								<div class="gallery__chapter-img">
-									<div class="main__galery-desktop-grid-wrapper">
-										<div class="swiper-slide">
-											<img src="img/photo.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-1.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-2.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-3.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-4.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-5.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-6.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-7.png" />
-										</div>
-										<div class="swiper-slide">
-											<img src="img/photo-8.png" />
-										</div>
-									</div>
-									<div class="main__galery-slider-mobile-wrapper">
-										<div class="swiper mySwiperMobile">
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper">
-												<!-- Slides -->
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo.png" />
-													<img src="img/photo-1.png" />
-													<img src="img/photo-2.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-3.png" />
-													<img src="img/photo-4.png" />
-													<img src="img/photo-5.png" />
-												</div>
-												<div class="swiper-slide main__galery-slider-slide">
-													<img src="img/photo-6.png" />
-													<img src="img/photo-7.png" />
-													<img src="img/photo-8.png" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-				<nav class="footer__nav">
-					<ul class="footer__nav-list">
-						<li class="footer__nav-item">
-							<a href="trainingMethods.html">Методика тренировок</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="ourCoaches.html">Наши тренеры</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="gallery.html">Фотогалерея</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="contacts.html">Контакты</a>
-						</li>
-						<li class="footer__nav-item">
-							<span style="cursor: pointer">Цены</span>
-						</li>
-					</ul>
-				</nav>
-				<p class="footer__text">
-					© cr7school@mail.ru | Детская футбольная школа или ИП ОГРН 323774600583211
-				</p>
-			</div>
-		</footer>
-	</div>
-	<script src="js/app.min.js?_v=20240324092832"></script>
-
-</body>
-
+      <main class="main">
+        <section class="gallery__section black-section main__section">
+          <div class="main__container gallery__container">
+            <div class="gallery__content">
+              <article class="gallery__text">
+                <h1 class="main__hello-title gallery__title">Фотогалерея</h1>
+                <h4 class="main__hello-subtitle gallery__subtitle">
+                  <span
+                    >Посмотрите фото с треенировок, фото футбольного зала и фото
+                    тренажерного зала!
+                  </span>
+                </h4>
+              </article>
+              <article class="gallery__images">
+                <div class="gallery__chapter">
+                  <h4 class="gallery__chapter-title active">Футбольный зал</h4>
+                  <div class="gallery__chapter-img">
+                    <div class="main__galery-desktop-grid-wrapper lessThen9">
+                      <div class="swiper-slide">
+                        <img src="./img/fz-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/fz-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/fz-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/fz-4.jpg" />
+                      </div>
+                    </div>
+                    <div class="main__galery-slider-mobile-wrapper">
+                      <div class="swiper mySwiperMobile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/fz-1.jpg" />
+                            <img src="./img/fz-2.jpg" />
+                            <img src="./img/fz-3.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/fz-4.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__chapter">
+                  <h4 class="gallery__chapter-title">Наши тренировки</h4>
+                  <div class="gallery__chapter-img">
+                    <div class="main__galery-desktop-grid-wrapper lessThen9">
+                      <div class="swiper-slide">
+                        <img src="./img/ft-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-4.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-5.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-6.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-7.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-8.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-9.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-10.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-11.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-12.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-13.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-14.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-15.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-16.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-17.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-18.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-19.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/ft-20.jpg" />
+                      </div>
+                    </div>
+                    <div class="main__galery-slider-mobile-wrapper">
+                      <div class="swiper mySwiperMobile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-1.jpg" />
+                            <img src="./img/ft-2.jpg" />
+                            <img src="./img/ft-3.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-4.jpg" />
+                            <img src="./img/ft-5.jpg" />
+                            <img src="./img/ft-6.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-7.jpg" />
+                            <img src="./img/ft-8.jpg" />
+                            <img src="./img/ft-9.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-10.jpg" />
+                            <img src="./img/ft-11.jpg" />
+                            <img src="./img/ft-12.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-13.jpg" />
+                            <img src="./img/ft-14.jpg" />
+                            <img src="./img/ft-15.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-16.jpg" />
+                            <img src="./img/ft-17.jpg" />
+                            <img src="./img/ft-18.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/ft-19.jpg" />
+                            <img src="./img/ft-20.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__chapter">
+                  <h4 class="gallery__chapter-title">Тренажерный зал</h4>
+                  <div class="gallery__chapter-img">
+                    <div class="main__galery-desktop-grid-wrapper lessThen9">
+                      <div class="swiper-slide">
+                        <img src="./img/tr-1.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/tr-2.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/tr-3.jpg" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./img/tr-4.jpg" />
+                      </div>
+                    </div>
+                    <div class="main__galery-slider-mobile-wrapper">
+                      <div class="swiper mySwiperMobile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/tr-1.jpg" />
+                            <img src="./img/tr-2.jpg" />
+                            <img src="./img/tr-3.jpg" />
+                          </div>
+                          <div class="swiper-slide main__galery-slider-slide">
+                            <img src="./img/tr-4.jpg" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="/trainingMethods">Методика тренировок</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/ourCoaches">Наши тренеры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/gallery">Фотогалерея</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/contacts">Контакты</a>
+              </li>
+              <li class="footer__nav-item goToPrice">
+                <span style="cursor: pointer">Цены</span>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__text">
+            © cr7school@mail.ru | Детская футбольная школа или ИП ОГРН
+            323774600583211
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/app.min.js"></script>
+  </body>
 </html>

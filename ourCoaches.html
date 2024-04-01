@@ -1,180 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <title>Наши тренеры</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <style>body{opacity: 0;}</style> -->
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="shortcut icon" href="/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240324092832"
+      rel="stylesheet"
+    />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-	<title>Наши тренеры</title>
-	<meta charset="UTF-8" />
-	<meta name="format-detection" content="telephone=no" />
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240324092832" />
-	<link rel="shortcut icon" href="logo.ico" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap&_v=20240324092832" rel="stylesheet" />
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <a href="/">
+              <img class="header__logo-img" src="./img/logo.png" alt="logo" />
+              <p class="header__logo-text">
+                <span>Школа</span>
+                <span>Футбола</span>
+              </p>
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="/trainingMethods">Методика тренировок</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/ourCoaches">Наши тренеры</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/gallery">Фотогалерея</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/contacts">Контакты</a>
+              </li>
+              <li class="header__nav-item goToPrice">
+                <span style="cursor: pointer">Цены</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__telephone">
+            <div class="header__telephone-icon">
+              <img src="./img/phone.svg" alt="phone" />
+            </div>
+            <div class="header__telephone-data">
+              <a href="tel:+79163443837" class="header__telephone-number"
+                >+7 (916) 344-38-37</a
+              >
+              <span class="header__telephone-time-for-call"
+                >Ежедневно с 9:00 до 20:00</span
+              >
+            </div>
+          </div>
+          <div class="header__burger icon-menu">
+            <span></span>
+          </div>
+        </div>
+      </header>
 
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__logo">
-					<a href="home.html">
-						<img class="header__logo-img" src="img/logo.png" alt="logo" />
-						<p class="header__logo-text">
-							<span>Школа</span>
-							<span>Футбола</span>
-						</p>
-					</a>
-				</div>
-				<nav class="header__nav">
-					<ul class="header__nav-list">
-						<li class="header__nav-item">
-							<a href="trainingMethods.html">Методика тренировок</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="ourCoaches.html">Наши тренеры</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="gallery.html">Фотогалерея</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="contacts.html">Контакты</a>
-						</li>
-						<li class="header__nav-item goToPrice">
-							<span style="cursor: pointer">Цены</span>
-						</li>
-					</ul>
-				</nav>
-				<div class="header__telephone">
-					<div class="header__telephone-icon">
-						<img src="img/phone.svg" alt="phone" />
-					</div>
-					<div class="header__telephone-data">
-						<a href="tel:+79163443837" class="header__telephone-number">+7 (916) 344-38-37</a>
-						<span class="header__telephone-time-for-call">Ежедневно с 9:00 до 20:00</span>
-					</div>
-				</div>
-				<div class="header__burger icon-menu">
-					<span></span>
-				</div>
-			</div>
-		</header>
-
-		<main class="main">
-			<section class="main__helo-section black-section main__section">
-				<div class="main__container ourCoaches__hello-container">
-					<article class="ourCoaches__hello-content">
-						<h1 class="main__hello-title">Наши тренеры</h1>
-						<h4 class="main__hello-subtitle">
-							<span>У нас молодой тренерский состав, который способен найти общий
-								язык с каждым ребенком, подобрав для него индивидуальный
-								комплекс тренировок 
-							</span>
-						</h4>
-						<button class="ourCoaches__hello-btn main__hello-btn btn goToPrice">
-							Записаться на пробную тренировку
-						</button>
-					</article>
-				</div>
-			</section>
-			<section class="ourCoaches__trainerInfo-section main__section">
-				<div class="main__container">
-					<div class="ourCoaches__trainerInfo-content">
-						<article class="ourCoaches__trainerInfo-card">
-							<ul class="ourCoaches__trainerInfo-list order-green-trainer">
-								<li class="main__life-footbal life-footbal ourCoaches__life-footbal">
-									ЖИВИФУТБОЛОМ
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item">
-									Выпускник ФК Спартак Москва. Участник и призер российских и
-									европейских турниров по футболу среди Юниоров.
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item">
-									Образование - московский институт физической культуры и
-									спорта
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item">
-									По специальности педагог-психолог, опыт работы детским
-									тренером более 10 лет.
-								</li>
-							</ul>
-							<div class="ourCoaches__trainerInfo-img order-green-trainer">
-								<img src="img/trainer1.png" alt="" />
-								<div class="ourCoaches__trainerInfo-person-data green-trainer-block">
-									<p class="ourCoaches__trainerInfo-person-name green-trainer-name">
-										<span> Боровской Александр Александрович </span>
-									</p>
-									<p class="ourCoaches__trainerInfo-person-position">
-										<span>Старший тренер</span>
-									</p>
-								</div>
-							</div>
-						</article>
-						<article class="ourCoaches__trainerInfo-card">
-							<div class="ourCoaches__trainerInfo-img">
-								<img src="img/trainer2.png" alt="" />
-								<div class="ourCoaches__trainerInfo-person-data red-trainer-block">
-									<p class="ourCoaches__trainerInfo-person-name red-trainer-name">
-										<span>Рощеня Владислав Евгеньевич</span>
-									</p>
-									<p class="ourCoaches__trainerInfo-person-position">
-										<span>Старший тренер</span>
-									</p>
-								</div>
-							</div>
-							<ul class="ourCoaches__trainerInfo-list">
-								<li class="main__life-footbal life-footbal ourCoaches__life-footbal red-trainer">
-									ЖИВИФУТБОЛОМ
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item red-trainer">
-									Имеет образование фитнес-тренера
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item red-trainer">
-									Закончил курсы Барселоны по футболу! Учился у топовых
-									тренеров Испании
-								</li>
-								<li class="ourCoaches__trainerInfo-list-item red-trainer">
-									Игровая карьера - профессиональный футболист, играл в Латвии
-									в высшем дивизионе.
-								</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</section>
-		</main>
-		<footer class="footer black-footer">
-			<div class="footer__container">
-				<nav class="footer__nav">
-					<ul class="footer__nav-list">
-						<li class="footer__nav-item">
-							<a href="trainingMethods.html">Методика тренировок</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="ourCoaches.html">Наши тренеры</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="gallery.html">Фотогалерея</a>
-						</li>
-						<li class="footer__nav-item">
-							<a href="contacts.html">Контакты</a>
-						</li>
-						<li class="footer__nav-item">
-							<span style="cursor: pointer">Цены</span>
-						</li>
-					</ul>
-				</nav>
-				<p class="footer__text">
-					© cr7school@mail.ru | Детская футбольная школа или ИП ОГРН 323774600583211
-				</p>
-			</div>
-
-		</footer>
-	</div>
-	<script src="js/app.min.js?_v=20240324092832"></script>
-
-</body>
-
+      <main class="main">
+        <section class="main__helo-section black-section main__section">
+          <div class="main__container ourCoaches__hello-container">
+            <article class="ourCoaches__hello-content">
+              <h1 class="main__hello-title">Наши тренеры</h1>
+              <h4 class="main__hello-subtitle">
+                <span
+                  >У нас молодой тренерский состав, который способен найти общий
+                  язык с каждым ребенком, подобрав для него индивидуальный
+                  комплекс тренировок 
+                </span>
+              </h4>
+              <button
+                class="ourCoaches__hello-btn main__hello-btn btn goToPrice"
+              >
+                Записаться на пробную тренировку
+              </button>
+            </article>
+          </div>
+        </section>
+        <section class="ourCoaches__trainerInfo-section main__section">
+          <div class="main__container">
+            <div class="ourCoaches__trainerInfo-content">
+              <article class="ourCoaches__trainerInfo-card">
+                <ul class="ourCoaches__trainerInfo-list order-green-trainer">
+                  <li
+                    class="main__life-footbal life-footbal ourCoaches__life-footbal"
+                  >
+                    ЖИВИФУТБОЛОМ
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item">
+                    Выпускник ФК Спартак Москва. Участник и призер российских и
+                    европейских турниров по футболу среди Юниоров.
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item">
+                    Образование - московский институт физической культуры и
+                    спорта
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item">
+                    По специальности педагог-психолог, опыт работы детским
+                    тренером более 10 лет.
+                  </li>
+                </ul>
+                <div class="ourCoaches__trainerInfo-img order-green-trainer">
+                  <img src="./img/trainer1.png" alt="" />
+                  <div
+                    class="ourCoaches__trainerInfo-person-data green-trainer-block"
+                  >
+                    <p
+                      class="ourCoaches__trainerInfo-person-name green-trainer-name"
+                    >
+                      <span> Боровской Александр Александрович </span>
+                    </p>
+                    <p class="ourCoaches__trainerInfo-person-position">
+                      <span>Старший тренер</span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article class="ourCoaches__trainerInfo-card">
+                <div class="ourCoaches__trainerInfo-img">
+                  <img src="./img/trainer2.png" alt="" />
+                  <div
+                    class="ourCoaches__trainerInfo-person-data red-trainer-block"
+                  >
+                    <p
+                      class="ourCoaches__trainerInfo-person-name red-trainer-name"
+                    >
+                      <span>Рощеня Владислав Евгеньевич</span>
+                    </p>
+                    <p class="ourCoaches__trainerInfo-person-position">
+                      <span>Старший тренер</span>
+                    </p>
+                  </div>
+                </div>
+                <ul class="ourCoaches__trainerInfo-list">
+                  <li
+                    class="main__life-footbal life-footbal ourCoaches__life-footbal red-trainer"
+                  >
+                    ЖИВИФУТБОЛОМ
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item red-trainer">
+                    Имеет образование фитнес-тренера
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item red-trainer">
+                    Закончил курсы Барселоны по футболу! Учился у топовых
+                    тренеров Испании
+                  </li>
+                  <li class="ourCoaches__trainerInfo-list-item red-trainer">
+                    Игровая карьера - профессиональный футболист, играл в Латвии
+                    в высшем дивизионе.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer black-footer">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="/trainingMethods">Методика тренировок</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/ourCoaches">Наши тренеры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/gallery">Фотогалерея</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="/contacts">Контакты</a>
+              </li>
+              <li class="footer__nav-item goToPrice">
+                <span style="cursor: pointer">Цены</span>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer__text">
+            © cr7school@mail.ru | Детская футбольная школа или ИП ОГРН
+            323774600583211
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/app.min.js"></script>
+  </body>
 </html>
