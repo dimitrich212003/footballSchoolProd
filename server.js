@@ -1,28 +1,23 @@
 const express = require("express");
+const { request } = require("http");
 const path = require("path");
 
 const app = express();
 
 app.use(express.static("public")); // создаем промежуточное ПО(это функционал, который встраивается в любую функцию экспресса) тут лежат статические файлы
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "home.html"));
-});
+const paths = {
+  "/": "home.html",
+  "/contacts": "contacts.html",
+  "/gallery": "gallery.html",
+  "/ourCoaches": "ourCoaches.html",
+  "/trainingMethods": "trainingMethods.html"
+};
 
-app.get("/contacts", (req, res) => {
-  res.sendFile(path.join(__dirname, "contacts.html"));
-});
-
-app.get("/gallery", (req, res) => {
-  res.sendFile(path.join(__dirname, "gallery.html"));
-});
-
-app.get("/ourCoaches", (req, res) => {
-  res.sendFile(path.join(__dirname, "ourCoaches.html"));
-});
-
-app.get("/trainingMethods", (req, res) => {
-  res.sendFile(path.join(__dirname, "trainingMethods.html"));
+Object.keys(paths).forEach((key) => {
+  app.get(key, (req, res) => {
+      res.sendFile(path.join(__dirname, paths[key]))
+  });
 });
 
 const PORT = 3001;
