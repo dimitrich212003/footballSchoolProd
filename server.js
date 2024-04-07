@@ -20,8 +20,8 @@ Object.keys(paths).forEach((key) => {
   });
 });
 
-const PORT = 80;
-const HOST = "94.250.249.248";
+const PORT = 3000;
+const HOST = "localhost";
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT} at http://${HOST}:${PORT}/`);
