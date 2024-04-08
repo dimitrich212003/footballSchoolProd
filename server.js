@@ -3,7 +3,6 @@ const path = require("path");
 
 const app = express();
 
-// Обработка статических файлов из директорий img, css и js
 app.use("/img", express.static(path.join(__dirname, "public/img")));
 app.use("/css", express.static(path.join(__dirname, "public/css")));
 app.use("/js", express.static(path.join(__dirname, "public/js")));
