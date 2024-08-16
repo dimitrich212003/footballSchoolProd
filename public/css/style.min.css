@@ -439,7 +439,7 @@ body {
 .main__training-programm {
   background-image: url(../img/trainingProgramBg.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
   background-size: cover;
 }
 .main__training-programm-cards {
@@ -528,9 +528,9 @@ body {
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  left: 0;
+  left: 585px;
   right: 0;
-  top: -200px;
+  top: -85px;
   background-color: #fff;
   border-radius: 5px;
   border: 2px solid #00732e;
@@ -680,7 +680,7 @@ body {
 .main__video {
   background-image: url(../img/videoBg.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
   background-size: cover;
 }
 .main__video-title {
@@ -727,7 +727,7 @@ body {
 .main__galery {
   background-image: url(../img/galleryBg.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
   background-size: cover;
   height: 1300px;
 }
@@ -3711,6 +3711,7 @@ body:not(.lg-from-hash)
   .btn:hover:before {
     width: 100%;
   }
+  
   .main__training-program-item {
     position: relative;
     top: 0;
@@ -5241,3 +5242,43 @@ body:not(.lg-from-hash)
     }
   }
 }
+
+.main__training-programm-more-btn {
+    width: 100%;
+  }
+  @media (min-width: 69.375em) {
+    .main__training-programm-more-btn {
+      margin-bottom: 2.5rem !important; 
+    }
+  }
+  @media (min-width: 20em) and (max-width: 69.375em) {
+    @supports (
+      margin-bottom: clamp(1.875rem, 1.621835443rem + 1.2658227848vw, 2.5rem)
+    ) {
+      .main__training-programm-more-btn {
+        margin-bottom: clamp(1.875rem, 1.621835443rem + 1.2658227848vw, 2.5rem);
+      }
+    }
+    @supports not (
+      margin-bottom: clamp(1.875rem, 1.621835443rem + 1.2658227848vw, 2.5rem)
+    ) {
+      .main__training-programm-more-btn {
+        margin-bottom: calc(1.875rem + 0.625 * (100vw - 20rem) / 49.375);
+      }
+    }
+  }
+  @media (max-width: 20em) {
+    .main__training-programm-more-btn {
+      margin-bottom: 1.875rem;
+    }
+  }
+  .btn-goToTraning {
+    display: block;
+    width: 40% !important;
+    margin: 0 auto;
+  }
+  @media (max-width: 47.99875em) {
+    .btn-goToTraning {
+      width: 350px !important;
+    }
+  }
