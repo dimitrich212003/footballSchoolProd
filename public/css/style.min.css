@@ -5282,7 +5282,6 @@ body:not(.lg-from-hash)
     width: 350px !important;
   }
 }
-
 .lessThen9 {
   grid-template-rows: 1fr 1fr;
 }
